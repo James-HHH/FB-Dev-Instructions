@@ -101,7 +101,7 @@ So lets do:
 "dio 1": {
   "character": "Sample name",
   "text": "Sample text from Foo, Bar",
-  "choices" {
+  "choices": {
     "1": {
       "text": "This is choice 1 and it leads to dio 2",
       "dio": "dio 2"
