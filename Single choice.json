@@ -1,24 +1,24 @@
 {
   "metadata": {
     "sect": "sect 1",
-    "dio": "dio 1"
+    "dia": "dia 1"
   },
 
   "sect 1": {
 
-    "dio 1": {
+    "dia 1": {
       "character": "Someone",
       "text": "Sample text from Foo, Bar",
       "choices": {
         "1": {
-          "text": "This is choice 1 and it leads to dio 2",
-          "dio": "dio 2"
+          "text": "This is choice 1 and it leads to dia 2",
+          "dia": "dia 2"
         }
       }
     },
 
-    "dio 2": {
-      "text": "This more sample text for dio 2",
+    "dia 2": {
+      "text": "This more sample text for dia 2",
       "end": true
     }
     
