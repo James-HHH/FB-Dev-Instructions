@@ -1,41 +1,41 @@
 {
   "metadata": {
     "sect": "sect 1",
-    "dio": "dio 1"
+    "dia": "dia 1"
   },
 
   "sect 1": {
 
-    "dio 1": {
+    "dia 1": {
       "character": "Someone",
       "text": "Sample text from Foo, Bar",
       "choices": {
         "1": {
-          "text": "To dio 2",
-          "dio": "dio 2"
+          "text": "To dia 2",
+          "dia": "dia 2"
         },
         "2": {
-          "text": "See what's in dio 3",
-          "dio": "dio 3"
+          "text": "See what's in dia 3",
+          "dia": "dia 3"
         }
       }
     },
 
-    "dio 2": {
-      "text": "This sample text for dio 2 and the game has ended",
+    "dia 2": {
+      "text": "This sample text for dia 2 and the game has ended",
       "end": true
     },
 
-    "dio 3": {
-      "text": "What? Another choice? But this one's from dio 3.",
+    "dia 3": {
+      "text": "What? Another choice? But this one's from dia 3.",
       "choices": {
         "1": {
-          "text": "Go back to dio 1",
-          "dio": "dio 1"
+          "text": "Go back to dia 1",
+          "dia": "dia 1"
         },
         "2": {
           "text": "Check out a different sect",
-          "dio": "different dio format",
+          "dia": "different dia format",
           "sect": "a different sect"
         }
       }
@@ -44,7 +44,7 @@
   },
 
   "a different sect": {
-    "different dio format": {
+    "different dia format": {
       "text": "Huh. So this is what a different sect is like. Huh..!\nOh what? This is an ending apparently.",
       "end": true
     }
