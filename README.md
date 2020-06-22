@@ -23,7 +23,7 @@ Key Value - `"key name": "key value"`
 Array - Collection of keys that could also have arrays in them.
 
 Sect / Section - A provided way of organizing the code, supposed to be used to section off different scenes, settings, whatever.
-Dio / Dialogue - The specified text/choices provided to the player.
+Dia / Dialogue - The specified text/choices provided to the player.
 
 ### The Syntax of JSON
 
@@ -59,7 +59,7 @@ Now, inside sect 1's brackets, type
 
 ```json
 "sect 1": {
-  "dio 1": {
+  "dia 1": {
     "character": "Sample name",
     "text": "Sample text from Foo, Bar",
     "end": true
@@ -72,7 +72,7 @@ Back in metadata, type
 ```json
 "metadata": {
   "sect": "sect 1",
-  "dio": "dio 1"
+  "dia": "dia 1"
 }
 ```
 
@@ -84,32 +84,32 @@ Now, this is a neat trick for displaying text on a screen but it's really boring
 
 # Adding a Choice
 
-Let's add another dialogue and call it "dio 2". It doesn't matter what it's called, just don't call two dialogues the same thing. Oh, and don't forget the comma and double line-break!
+Let's add another dialogue and call it "dia 2". It doesn't matter what it's called, just don't call two dialogues the same thing. Oh, and don't forget the comma and double line-break!
 Add the text, character, all of it. Just make sure there's the "end" tag.
 
 ```json
-"dio 2": {
+"dia 2": {
   "text": "texty text",
   "end": true
 }
 ```
 
-Now back in "dio 1", get rid of the `"end": true` and put `"choices": {}`. Inside choices, add `"1": {}`. It must be 1, as that will be the first choice. And since we don't have multiple dialogues to refer to yet, there's only one possible choice we can do.
+Now back in "dia 1", get rid of the `"end": true` and put `"choices": {}`. Inside choices, add `"1": {}`. It must be 1, as that will be the first choice. And since we don't have multiple dialogues to refer to yet, there's only one possible choice we can do.
 So lets do:
 
 ```json
-"dio 1": {
+"dia 1": {
   "character": "Sample name",
   "text": "Sample text from Foo, Bar",
   "choices": {
     "1": {
-      "text": "This is choice 1 and it leads to dio 2",
-      "dio": "dio 2"
+      "text": "This is choice 1 and it leads to dia 2",
+      "dia": "dia 2"
     }
   }
 },
-"dio 2": {
-  "text": "This more sample text for dio 2",
+"dia 2": {
+  "text": "This more sample text for dia 2",
   "end": true
 }
 ```
@@ -120,7 +120,7 @@ If you've done everything right, you should see:
 Sample name:
 Sample text from Foo, Bar
 
-1. This is choice 1 and it leads to dio 2>
+1. This is choice 1 and it leads to dia 2>
 ```
 
 The code we just made is in Single choice.json if you wanna take a look.
